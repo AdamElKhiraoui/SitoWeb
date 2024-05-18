@@ -1,0 +1,151 @@
+
+
+    
+@keyframes bello {
+  0%,
+  100% {
+    border-radius: 30% 70% 70% 30% / 30% 52% 48% 70%;
+  }
+
+  10% {
+    border-radius: 50% 50% 20% 80% / 25% 80% 20% 75%;
+  }
+
+  20% {
+    border-radius: 67% 33% 47% 53% / 37% 20% 80% 63%;
+  }
+
+  30% {
+    border-radius: 39% 61% 47% 53% / 37% 40% 60% 63%;
+  }
+
+  40% {
+    border-radius: 39% 61% 82% 18% / 74% 40% 60% 26%;
+  }
+
+  50% {
+    border-radius: 100%;
+  }
+
+  60% {
+    border-radius: 50% 50% 53% 47% / 72% 69% 31% 28%;
+  }
+
+  70% {
+    border-radius: 50% 50% 53% 47% / 26% 22% 78% 74%;
+  }
+
+  80% {
+    border-radius: 50% 50% 53% 47% / 26% 69% 31% 74%;
+  }
+
+  90% {
+    border-radius: 20% 80% 20% 80% / 20% 80% 20% 80%;
+  }
+}
+
+.thumbForm{
+  animation: bello 30s infinite;
+  border-radius: 30% 70% 53% 47% / 26% 46% 54% 74%;
+}
+
+.wrapper {
+  width: 600px;
+  height: 300px;
+  display: table;
+  border: 5px solid #111;
+  margin: 50px auto;
+  padding: 20px;
+  position: relative;
+}
+.wrapper:after, .wrapper:before {
+  content: "";
+  position: absolute;
+  font-family: fontAwesome;
+  font-size: 50px;
+  color: white;
+  background: transparent;
+}
+.wrapper:after {
+  content: "";
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+.wrapper:before {
+  content: "";
+  bottom: 0;
+  right: 0;
+  transform: translate(50%, 50%);
+}
+
+.description {
+  display: table-cell;
+  width: 50%;
+  vertical-align: middle;
+}
+
+.description {
+  font-size: 14px;
+}
+
+.border-radius {
+  border-radius: 30px;
+}
+
+.text-right {
+  text-align: left;
+}
+
+.custom-carousel.carousel{
+  width: 200px;
+  height: 200px;
+}
+
+datalist {
+  position: absolute;
+  max-height: 10em;
+  margin-top: 40px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  outline: 0 none;
+  width: 100vw !important;
+}
+
+datalist option {
+  font-size: 0.8em;
+  padding: 0.3em 1em;
+  background-color: #F9E8D9;
+  cursor: pointer;
+  color: gray;
+  text-align: left;
+  font-size: 15px;
+}
+
+/* option active styles */
+datalist option:hover, datalist option:focus {
+  color: white;
+  background-color: #F7B787;
+  outline: 0 none;
+}
+
+@media screen and (max-width:767px){
+  #ingList{
+    display: none;
+  }
+  #blobDiv{
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width:430px){
+  .blob{
+    width: 250px !important;
+  }
+}
+@media screen and (max-width:260px){
+  .blob{
+    width: 100px !important;
+  }
+}
+

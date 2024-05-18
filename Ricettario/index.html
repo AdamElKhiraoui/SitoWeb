@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/cards.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Ricettario</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/meal2.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body onload="getPage()" style="background-color: #F9E8D9;">
+    
+    <!-- Inizio del progetto-->
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light" style="background-color: #F9E8D9; z-index: 9999999;">
+      <div class="container-fluid" style="color: gray;">
+        <a class="navbar-brand" href="index.html">Ricettario</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            
+          </ul>
+          <form class="d-flex input-group w-auto form-outline form-gray">
+            <input oninput="getMealList()" class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+            <datalist id="datalistOptions">
+              
+            </datalist>
+            <a href="recipe.html">
+              <button
+              class="btn"
+              type="button"
+              data-mdb-ripple-color="light"
+              onclick="getMealByName()">
+            <i class="fas fa-search"></i>
+            </button>
+            </a>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- background-image: url(img/bgice.jpeg); background-size: cover; --> 
+    <main>
+      <br>
+          <div class="hghgh" style="display: flex; justify-content: center; align-items: center;">
+            <h4 id="randCock" style="color: gray;"><strong> </strong></h4>
+            <button
+              style="z-index: 1001; color: gray; margin-top: -5px;"
+              class="btn"
+              type="button"
+              data-mdb-ripple-color="light"
+              onclick="getRobe()">
+              <i class="fas fa-redo"></i>
+            </button>
+            
+          </div>
+          <br>
+      <div class="container">
+        <!--Section: Content-->
+        <div id="pagina">
+          
+        </div>
+        <!--Section: Content-->
+      </div>
+    </main>                                                              
+    <!-- Footer -->
+    
+  <footer id="infoCock" class="text-center text-gray" style="background-color: #F9E8D9;">
+    
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-gray btn-floating m-1" href="https://it-it.facebook.com/" role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+
+        <!-- Twitter -->
+        <a class="btn btn-outline-gray btn-floating m-1" href="https://twitter.com/login?lang=it" role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+
+        <!-- Google -->
+        <a class="btn btn-outline-gray btn-floating m-1" href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiT4MKtrtX7AhUHndUKHUs-BNoYABAAGgJ3cw&ohost=www.google.com&cid=CAASJORoehihtQEvfq1emGz-f_X39IXuTqw7knzywPgkP3vM4QacDQ&sig=AOD64_09VUlZZc-9Pvhv8ByfwgQPNVKqzg&q&adurl&ved=2ahUKEwiAwrqtrtX7AhXCSPEDHVbTC44Q0Qx6BAgLEAE" role="button"
+          ><i class="fab fa-google"></i
+        ></a>
+
+        <!-- Instagram -->
+        <a class="btn btn-outline-gray btn-floating m-1" href="https://www.instagram.com/adamek1108/" role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+
+        <!-- tiktok -->
+        <a class="btn btn-outline-gray btn-floating m-1" href="https://www.tiktok.com/login?redirect_url=https%3A%2F%2Fwww.tiktok.com%2Fit-IT&lang=en&enter_method=mandatory" role="button"
+          ><i class="fab fa-tiktok"></i
+        ></a>
+
+        <!-- Linkedin -->
+        <a class="btn btn-outline-gray btn-floating m-1" href="https://www.linkedin.com/login/it" role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Form -->
+      <section class="">
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for new updates</strong>
+              </p>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline form-gray mb-4">
+                <input type="email" id="form5Example21" class="form-control" />
+                <label class="form-label" for="form5Example21">Email address</label>
+              </div>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button onclick="getEmail()" type="button" class="btn btn-outline-gray mb-4">
+                Subscribe
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </section>
+      <!-- Section: Form -->
+
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: #F9E8D9">
+      © 2023 Copyright: Adamel
+    </div>
+    <!-- Copyright -->
+    
+  </footer>
+<!-- Footer -->
+    <!-- End your project here-->
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"
+    ></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript" src="js/code.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/datalist-css/dist/datalist-css.min.js"></script>
+  </body>
+</html>
